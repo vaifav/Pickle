@@ -2,7 +2,7 @@ import { DUMMY_MARQUEE } from "../../utils/constants";
 
 const Marque = () => {
 	return (
-		<section className="flex items-center h-10 bg-secondary px-0! my-5">
+		<section className="flex items-center h-10 bg-secondary px-0! my-5 overflow-hidden">
 			<div className="flex animate-marquee w-max">
 				{DUMMY_MARQUEE.map((tag) => {
 					return (
