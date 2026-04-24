@@ -1,20 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-    --color-primary-50: #bce2a3;
-    --color-primary-100: #5a724a;
-    --color-primary-200: #3a5c2a;
-    --color-secondary: #222;
-    --color-secondary-text: #818181;
-    --color-rust-50: #ffe5ae;
-    --color-rust-100: #c8952a;
-    --color-rust-200: #e8871a;
-    --color-rust-300: #b87333;
-    --color-rust-400: #a84b2f;
+	--color-primary-50: #bce2a3;
+	--color-primary-100: #5a724a;
+	--color-primary-200: #3a5c2a;
+	--color-secondary: #222;
+	--color-secondary-text: #818181;
+	--color-rust-50: #ffe5ae;
+	--color-rust-100: #c8952a;
+	--color-rust-200: #e8871a;
+	--color-rust-300: #b87333;
+	--color-rust-400: #a84b2f;
 
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'DM Sans', sans-serif;
+	--font-serif: "Playfair Display", Georgia, serif;
+	--font-sans: "DM Sans", sans-serif;
+	--font-secondary-sans: "Lora", serif;
+
+	--animate-fall: fall 10s linear infinite;
+	--animate-marquee: marquee 20s linear infinite;
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+	@keyframes fall {
+		0% {
+			transform: translateY(-10%) translateX(0) rotate(0deg);
+			opacity: 0;
+		}
+		10% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 1%;
+		}
+		100% {
+			transform: translateY(110vh) translateX(100px) rotate(360deg);
+			opacity: 0;
+		}
+	}
 }
-

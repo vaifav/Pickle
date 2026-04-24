@@ -1,4 +1,4 @@
-# Completed the website header part
+# Completed the website hero part
 
-- Added Side Bar
-- Added Search Bar
+- Used Dummy data
+- Actual data will be used later

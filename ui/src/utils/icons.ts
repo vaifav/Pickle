@@ -1,0 +1,1 @@
+export {default as Leaf} from "../assets/left-group.svg?react"

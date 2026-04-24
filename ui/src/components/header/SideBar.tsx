@@ -7,7 +7,7 @@ const SideBar = ({ isMenuOpen, setIsMenuOpen }: StateProps<boolean, "isMenuOpen"
 	const closeMenu = () => setIsMenuOpen(false);
 
 	return (
-		<div className={`fixed inset-0 z-200 h-dvh w-full md:hidden ${isMenuOpen ? "flex" : "hidden"}`}>
+		<div className={`fixed left-0 top-0 z-200 h-dvh w-full md:hidden ${isMenuOpen ? "flex" : "hidden"}`}>
 			<div className="flex flex-col w-60 bg-white">
 				<div className="flex items-center justify-between h-20 w-full p-3 shadow">
 					<h1 className="font-serif font-black text-2xl text-primary-100 tracking-[-0.5px]">
