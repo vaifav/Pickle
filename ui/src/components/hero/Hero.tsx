@@ -22,7 +22,7 @@ const Hero = () => {
 								<br />
 								Delivered Fresh.
 							</p>
-							<p className="max-w-100 mb-6 font-secondary-sans italic text-secondary-text leading-[1.85] text-[15px]">
+							<p className="max-w-100 mb-6   italic text-secondary-text leading-[1.85] text-[15px]">
 								Generations-old recipes. Wild-harvested spices. Every jar is slow-cured to perfection — no preservatives, no shortcuts.
 							</p>
 							<div className="flex items-center gap-5">
@@ -75,7 +75,7 @@ export default Hero;
 					</div>
 					<div className="flex flex-col items-center *:text-center">
 						<p className="font-semibold uppercase my-5 tracking-[1.5px] text-secondary-text text-[12px]">featured jar</p>
-						<NavLink to={ENDPOINTS.SHOP} className="flex items-center gap-2 font-secondary-sans font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
+						<NavLink to={ENDPOINTS.SHOP} className="flex items-center gap-2   font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
 							<span>
 								Naadan <em className="text-primary-100">Lemon</em> pickle
 							</span>
