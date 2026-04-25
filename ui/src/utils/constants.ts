@@ -36,6 +36,11 @@ export const NAV = [
 	},
 ];
 
+export const FOOTER_DATA = {
+	shop: ["Mango Pickles", "Lime Pickles", "Chilli Pickles", "Gift Boxes", "Bundles"],
+	info: ["Our Story", "How We Make", "Ingredients", "Shipping Policy", "Returns"],
+	connect: ["Instagram", "WhatsApp", "Facebook", "hello@example.in"],
+};
 
 // Dummy data
 export const DUMMY_PERSON =
@@ -59,4 +64,19 @@ export const DUMMY_FEATURED_PICKLES = [
 		image: jaggery,
 	},
 ];
-export const DUMMY_MARQUEE = ['Free delivery on orders above ₹499', 'Handcrafted in Kerala', 'No artificial preservatives', 'Pan-India shipping', '40+ pickle varieties', 'Traditional family recipes', 'Freshness guaranteed', 'Free delivery on orders above ₹499', 'Handcrafted in Kerala', 'No artificial preservatives', 'Pan-India shipping', '40+ pickle varieties', 'Traditional family recipes', 'Freshness guaranteed']
+export const DUMMY_MARQUEE = [
+	"Free delivery on orders above ₹499",
+	"Handcrafted in Kerala",
+	"No artificial preservatives",
+	"Pan-India shipping",
+	"40+ pickle varieties",
+	"Traditional family recipes",
+	"Freshness guaranteed",
+	"Free delivery on orders above ₹499",
+	"Handcrafted in Kerala",
+	"No artificial preservatives",
+	"Pan-India shipping",
+	"40+ pickle varieties",
+	"Traditional family recipes",
+	"Freshness guaranteed",
+];

@@ -1,15 +1,17 @@
-import { Outlet } from "react-router-dom"
-import Header from "./header/Header"
+import { Outlet } from "react-router-dom";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 
 const Container = () => {
-  return (
-    <section>
-      <Header />
-      <main className="relative h-dvh overflow-scroll pt-20  w-full">
-        <Outlet />
-      </main>
-    </section>
-  )
-}
+	return (
+		<section className="h-dvh overflow-y-scroll">
+			<Header />
+			<main className="relative pt-20 w-full">
+				<Outlet />
+			</main>
+			<Footer />
+		</section>
+	);
+};
 
-export default Container
+export default Container;

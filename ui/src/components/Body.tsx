@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ENDPOINTS } from "../utils/constants";
 import Container from "./Container";
-import Hero from "./hero/Hero";
+import Home from "./home/Home";
 
 const Body = () => {
 	const routes = createBrowserRouter([
@@ -11,7 +11,7 @@ const Body = () => {
             children: [
                 {
                     path: ENDPOINTS.HOME,
-                    element: <Hero />
+                    element: <Home />
                 },
             ]
         }

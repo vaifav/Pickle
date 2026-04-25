@@ -16,8 +16,8 @@
 	--color-rust-400: #a84b2f;
 
 	--font-serif: "Playfair Display", Georgia, serif;
-	--font-sans: "DM Sans", sans-serif;
-	--font-secondary-sans: "Lora", serif;
+	--font-sans: "Lora", serif;
+	--font-secondary-sans: "DM Sans", sans-serif;
 
 	--animate-fall: fall 10s linear infinite;
 	--animate-marquee: marquee 20s linear infinite;
