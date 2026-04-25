@@ -3,7 +3,7 @@ import { ENDPOINTS, FOOTER_DATA } from "../../utils/constants";
 
 const Footer = () => {
 	return (
-		<footer className="flex flex-col bg-secondary px-5 py-10 md:px-10  md:flex-row md:justify-between">
+		<footer className="wrapper flex flex-col bg-secondary py-10 md:flex-row md:justify-between">
 			<div className="mb-10 lg:w-1/2">
 				<NavLink to={ENDPOINTS.HOME}>
 					<h1 className="font-serif font-black text-xl text-primary-100 tracking-[-0.5px]">

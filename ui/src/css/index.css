@@ -49,3 +49,11 @@
 		}
 	}
 }
+
+@utility wrapper {
+  @apply px-5 md:px-10;
+}
+
+.connect-bg {
+	background-image: url("../assets/connect-bg.svg");
+}

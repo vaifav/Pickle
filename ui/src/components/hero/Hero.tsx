@@ -9,7 +9,7 @@ import Marque from "./Marque";
 const Hero = () => {
 	return (
 		<>
-			<section className="flex flex-col mt-5 gap-10 *:px-5 *:md:px-10 lg:gap-0 lg:flex-row">
+			<section className="flex flex-col mt-5 gap-10 wrapper lg:gap-0 lg:flex-row">
 				<div className="flex flex-col w-full shrink-0 lg:w-5/12">
 					<div className="border-b border-secondary-text/40 pb-10">
 						<SectionDivider text="naadan,handcrafted,pure" />
