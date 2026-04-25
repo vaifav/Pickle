@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`flex items-center justify-between h-20 w-full p-2 fixed inset-0 z-100 bg-white/50 backdrop-blur md:px-4 ${!isMenuOpen && "shadow"}`}>
+      <header className={`wrapper flex items-center justify-between h-20 w-full p-2 fixed inset-0 z-100 bg-white/50 backdrop-blur ${!isMenuOpen && "shadow"}`}>
         <div>
           <h1 className="font-serif font-black text-xl text-primary-100 tracking-[-0.5px]">
             PickTaste<span>.</span>

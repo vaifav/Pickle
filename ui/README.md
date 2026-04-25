@@ -1,1 +1,1 @@
-# Completed the website Footer part
+# Completed the website Stay connected part
