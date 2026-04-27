@@ -42,6 +42,25 @@ export const FOOTER_DATA = {
 	connect: ["Instagram", "WhatsApp", "Facebook", "hello@example.in"],
 };
 
+export const OUR_PROCESS_STEPS = [
+	{
+		title:"Browse & Pick",
+		description: "Explore 40+ handcrafted varieties. Filter by taste, size, or occasion."
+	},
+	{
+		title:"Place Your Order",
+		description: "Secure checkout with UPI, and card options. Pan-India delivery."
+	},
+	{
+		title:"We craft fresh",
+		description: "Each jar is made to order in small batches — never pre-stockpiled."
+	},
+	{
+		title:"Delivered safely",
+		description: "Tamper-proof jars, eco packaging, delivered in 3–5 business days."
+	},
+]
+
 // Dummy data
 export const DUMMY_PERSON =
 	"https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww";

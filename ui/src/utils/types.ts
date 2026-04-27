@@ -13,7 +13,6 @@ export type CommonSectionPropsType = {
 	linkText?: string;
 	emphasizedText?: string;
 	className?: string;
-	lineBreak?: boolean;
 	hasLink?: boolean;
 	Component: React.ComponentType
 };

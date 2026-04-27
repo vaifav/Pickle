@@ -3,16 +3,15 @@ import { NavLink } from "react-router-dom";
 import SectionDivider from "../hero/SectionDivider";
 import { ChevronRight } from "lucide-react";
 
-const CommonSection = ({ Component, text, dividerText, linkText = "Browse all", emphasizedText = "",className="", lineBreak = false, hasLink = true }: CommonSectionPropsType) => {
+const CommonSection = ({ Component, text, dividerText, linkText = "Browse all", emphasizedText = "", className = "", hasLink = true }: CommonSectionPropsType) => {
 	return (
-		<section className={`wrapper flex flex-col gap-6 py-20 ${className}`}>
+		<section className={`wrapper flex flex-col gap-10 py-20 ${className}`}>
 			<div className="flex flex-col gap-3 justify-between md:flex-row md:items-baseline-last">
 				<div>
 					<SectionDivider text={dividerText} />
 					<h1 className="text-secondary font-bold font-serif leading-[1.1] tracking-[-1px] text-[clamp(36px,4vw,52px)]">
-						{text}
-						{lineBreak && <br />}
-						{emphasizedText && <em className="text-primary-100">{emphasizedText}</em>}
+						<span dangerouslySetInnerHTML={{ __html: text }} />
+						{emphasizedText && <em className="text-primary-100 px-3">{emphasizedText}</em>}
 					</h1>
 				</div>
 				{hasLink && (
@@ -23,7 +22,7 @@ const CommonSection = ({ Component, text, dividerText, linkText = "Browse all", 
 					</div>
 				)}
 			</div>
-            <Component />
+			<Component />
 		</section>
 	);
 };
