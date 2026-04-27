@@ -1,3 +1,1 @@
-# Completed the website bestseller part
-
-- Used dummy data, will change to actual data later
+# Completed the website our process part

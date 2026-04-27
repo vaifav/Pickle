@@ -51,7 +51,7 @@
 }
 
 @utility wrapper {
-	@apply px-5 md:px-10 2xl:px-100;
+	@apply px-5 md:px-10;
 }
 
 .connect-bg {
