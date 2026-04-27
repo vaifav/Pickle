@@ -15,7 +15,7 @@ const SideBar = ({ isMenuOpen, setIsMenuOpen }: StateProps<boolean, "isMenuOpen"
 					</h1>
 					<X onClick={closeMenu} />
 				</div>
-				<nav className="flex flex-col gap-2 pl-4 pt-4.5 grow">
+				<nav className="flex flex-col gap-2 pl-4 pt-4.5 grow font-secondary-sans">
 					{NAV.map(({ name, path, Icon }) => {
 						return (
 							<NavLink

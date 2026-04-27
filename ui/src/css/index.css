@@ -54,6 +54,36 @@
 	@apply px-5 md:px-10;
 }
 
+@layer utilities {
+	.custom-scrollbar {
+		&::-webkit-scrollbar {
+			width: 1px;
+			height: 1px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+			border-radius: 10px;
+
+			transition: background-color 0.2s ease;
+		}
+
+		&:hover::-webkit-scrollbar-thumb {
+			background-color: var(--color-neutral-500);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			&:hover::-webkit-scrollbar-thumb {
+				background-color: var(--color-neutral-700);
+			}
+		}
+	}
+}
+
 .connect-bg {
 	background-image: url("../assets/connect-bg.svg");
 }

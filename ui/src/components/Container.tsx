@@ -4,7 +4,7 @@ import Footer from "./footer/Footer";
 
 const Container = () => {
 	return (
-		<section className="h-dvh overflow-y-scroll">
+		<section className="h-dvh overflow-y-scroll custom-scrollbar">
 			<Header />
 			<main className="relative pt-20 w-full">
 				<Outlet />
