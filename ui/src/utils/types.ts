@@ -12,6 +12,7 @@ export type CommonSectionPropsType = {
 	dividerText: string;
 	linkText?: string;
 	emphasizedText?: string;
+	className?: string;
 	lineBreak?: boolean;
 	hasLink?: boolean;
 	Component: React.ComponentType

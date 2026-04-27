@@ -50,18 +50,26 @@ export const DUMMY_FEATURED_PICKLES = [
 	{
 		name: "lemon",
 		image: lemon,
+		price: 160,
+		description: "Sun-dried limes, red chilli, fenugreek, aged in clay pots, pure masala"
 	},
 	{
 		name: "dates",
 		image: dates,
+		price: 120,
+		description: "Arabian dates, village-ground spices, cold-pressed sesame oil"
 	},
 	{
 		name: "garlic",
 		image: lemon,
+		price: 180,
+		description: "Small pearl onions, tamarind, kokum, traditional Kerala masala"
 	},
 	{
 		name: "lemon",
 		image: jaggery,
+		price: 130,
+		description: "Sun-dried limes, jaggery, fenugreek, aged in clay pots, kerala traditional masala"
 	},
 ];
 export const DUMMY_MARQUEE = [
