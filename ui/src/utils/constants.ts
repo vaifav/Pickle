@@ -80,3 +80,48 @@ export const DUMMY_MARQUEE = [
 	"Traditional family recipes",
 	"Freshness guaranteed",
 ];
+
+export const DUMMY_CATEGORIES = [
+	{
+		id: 1,
+		name: "Mango Pickle",
+		numberOfVarities: 15,
+		isComingSoon: false,
+		styles: "md:col-span-2 md:row-span-2",
+		image: "https://plus.unsplash.com/premium_photo-1675731118431-fdaf4dc283ee?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
+	{
+		id: 2,
+		name: "Lemon & Citrus",
+		numberOfVarities: 5,
+		isComingSoon: false,
+		styles: "md:col-span-1",
+		image: "https://plus.unsplash.com/premium_photo-1675731118156-51ade18e82b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+	},
+	{
+		id: 3,
+		name: "Garlic & Ginger",
+		numberOfVarities: 7,
+		isComingSoon: false,
+		styles: "md:col-span-1",
+		image: "https://plus.unsplash.com/premium_photo-1675731118463-c475c5508b80?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
+	{
+		id: 4,
+		name: "Chilli & Spicy",
+		numberOfVarities: 3,
+		isComingSoon: false,
+		styles: "md:col-span-1",
+		image: "https://plus.unsplash.com/premium_photo-1675731117887-a42bad4a4ce2?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
+	{
+		id: 5,
+		name: "Dry snacks & Farsan",
+		numberOfVarities: 0,
+		isComingSoon: true,
+		styles: "md:col-span-1",
+		image: "https://plus.unsplash.com/premium_photo-1668862483214-30aa4f8e915f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	},
+];
+
+// https://plus.unsplash.com/premium_photo-1726876952155-b08350d9b9af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM2fHx8ZW58MHx8fHx8

@@ -1,1 +1,1 @@
-# Completed the website Stay connected part
+# Completed the website categories part in home
