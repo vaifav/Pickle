@@ -12,7 +12,7 @@ const Categories = () => {
 	return (
 		<section className="grid gap-2 h-300 md:h-100 md:grid-cols-4">
 			{DUMMY_CATEGORIES.map((cat) => (
-				<NavLink to="" key={cat.id} className={`group grid grid-cols-1 grid-rows-1 place-items-end bg-secondary rounded-lg font-bold overflow-hidden ${cat.styles}`}>
+				<NavLink to="" key={cat.id} className={`group grid grid-cols-1 grid-rows-1 place-items-end bg-secondary rounded-3xl font-bold overflow-hidden ${cat.styles}`}>
 					{cat.image && <img className="group-hover:scale-120 transition-all duration-700 col-start-1 row-start-1 size-full object-cover opacity-30" src={cat.image} alt={cat.name} />}
 					<div className={`flex flex-col justify-end p-4 size-full col-start-1 row-start-1 z-10 relative ${comingSoonClass(cat.isComingSoon)}`}>
 						<h1 className={`font-serif font-bold text-white leading-6 text-[clamp(20px,1vw,28px)] ${cat.isComingSoon && "text-rust-100!"}`}>{cat.name}</h1>
