@@ -3,7 +3,7 @@ const Connect = () => {
 	return (
 		<section className={`connect-bg wrapper flex flex-col gap-5 py-20 bg-secondary/98 *:w-full *:md:w-1/2 md:flex-row md:items-center md:justify-between`} >
 			<div className="flex flex-col items-center justify-center md:items-start lg:w-5/12">
-				<SectionDivider text="stay,connected" />
+				<SectionDivider text="stay connected" />
 				<h1 className="font-serif font-black leading-6 text-center text-white mb-2 tracking-[1px] text-[clamp(20px,6vw,40px)] sm:leading-10 md:text-left">
 					Get notified when
 					<em className="text-primary-100">new pickles </em>
