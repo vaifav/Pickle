@@ -44,22 +44,22 @@ export const FOOTER_DATA = {
 
 export const OUR_PROCESS_STEPS = [
 	{
-		title:"Browse & Pick",
-		description: "Explore 40+ handcrafted varieties. Filter by taste, size, or occasion."
+		title: "Browse & Pick",
+		description: "Explore 40+ handcrafted varieties. Filter by taste, size, or occasion.",
 	},
 	{
-		title:"Place Your Order",
-		description: "Secure checkout with UPI, and card options. Pan-India delivery."
+		title: "Place Your Order",
+		description: "Secure checkout with UPI, and card options. Pan-India delivery.",
 	},
 	{
-		title:"We craft fresh",
-		description: "Each jar is made to order in small batches — never pre-stockpiled."
+		title: "We craft fresh",
+		description: "Each jar is made to order in small batches — never pre-stockpiled.",
 	},
 	{
-		title:"Delivered safely",
-		description: "Tamper-proof jars, eco packaging, delivered in 3–5 business days."
+		title: "Delivered safely",
+		description: "Tamper-proof jars, eco packaging, delivered in 3–5 business days.",
 	},
-]
+];
 
 // Dummy data
 export const DUMMY_PERSON =
@@ -70,25 +70,25 @@ export const DUMMY_FEATURED_PICKLES = [
 		name: "lemon",
 		image: lemon,
 		price: 160,
-		description: "Sun-dried limes, red chilli, fenugreek, aged in clay pots, pure masala"
+		description: "Sun-dried limes, red chilli, fenugreek, aged in clay pots, pure masala",
 	},
 	{
 		name: "dates",
 		image: dates,
 		price: 120,
-		description: "Arabian dates, village-ground spices, cold-pressed sesame oil"
+		description: "Arabian dates, village-ground spices, cold-pressed sesame oil",
 	},
 	{
 		name: "garlic",
 		image: lemon,
 		price: 180,
-		description: "Small pearl onions, tamarind, kokum, traditional Kerala masala"
+		description: "Small pearl onions, tamarind, kokum, traditional Kerala masala",
 	},
 	{
 		name: "lemon",
 		image: jaggery,
 		price: 130,
-		description: "Sun-dried limes, jaggery, fenugreek, aged in clay pots, kerala traditional masala"
+		description: "Sun-dried limes, jaggery, fenugreek, aged in clay pots, kerala traditional masala",
 	},
 ];
 export const DUMMY_MARQUEE = [
@@ -151,4 +151,25 @@ export const DUMMY_CATEGORIES = [
 	},
 ];
 
-// https://plus.unsplash.com/premium_photo-1726876952155-b08350d9b9af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM2fHx8ZW58MHx8fHx8
+export const DUMMY_REVIEWS = [
+	{
+		review: "The spicy mango pickle has that authentic homemade kick. The mustard oil base is perfect and reminds me of my grandmother's recipe.",
+		name: "Amit Sharma",
+		place: "Jaipur, Rajasthan",
+	},
+	{
+		review: "Incredible crunch on the garlic pickles! They arrived safely in Mumbai with zero leakage, which I was honestly worried about.",
+		name: "Rohan Deshmukh",
+		place: "Mumbai, Maharashtra",
+	},
+	{
+		review: "The balance of tanginess and spice in the lime pickle is spot on. It pairs beautifully with simple curd rice.",
+		name: "Kavitha Iyer",
+		place: "Chennai, Tamil Nadu",
+	},
+	{
+		review: "Good quality, but I wish the 'Extra Hot' version was actually hotter. Still, the texture is much better than store-bought brands.",
+		name: "Sandeep Gill",
+		place: "Chandigarh, Punjab",
+	},
+];

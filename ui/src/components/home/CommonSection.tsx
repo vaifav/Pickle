@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 const CommonSection = ({ Component, text, dividerText, linkText = "Browse all", emphasizedText = "", className = "", hasLink = true }: CommonSectionPropsType) => {
 	return (
-		<section className={`wrapper flex flex-col gap-10 py-20 ${className}`}>
+		<section className={`wrapper flex flex-col gap-10 py-10 md:gap-20  ${className}`}>
 			<div className="flex flex-col gap-3 justify-between md:flex-row md:items-baseline-last">
 				<div>
 					<SectionDivider text={dividerText} />
