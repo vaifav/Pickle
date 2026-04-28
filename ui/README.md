@@ -1,3 +1,3 @@
-# Completed the website review part in home
+# Completed the website aside part in product list
 
-- Used dummy data, will change to actual data later
+- Used Shadcn ui also

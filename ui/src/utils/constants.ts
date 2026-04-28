@@ -6,7 +6,6 @@ import { BookOpen, CookingPot, Phone, Store } from "lucide-react";
 export const ENDPOINTS = {
 	HOME: "/",
 	PRODUCTS: "/products",
-	SHOP: "/shop",
 	CONTACT: "/contact",
 	OUR_STORY: "/ourstory",
 	CART: "/cart",
@@ -21,7 +20,7 @@ export const NAV = [
 	},
 	{
 		name: "Shop",
-		path: ENDPOINTS.SHOP,
+		path: ENDPOINTS. PRODUCTS,
 		Icon: Store,
 	},
 	{
@@ -37,7 +36,7 @@ export const NAV = [
 ];
 
 export const FOOTER_DATA = {
-	shop: ["Mango Pickles", "Lime Pickles", "Chilli Pickles", "Gift Boxes", "Bundles"],
+	shop: ["All Pickles","Mango Pickles", "Lime Pickles", "Chilli Pickles", "Gift Boxes", "Bundles"],
 	info: ["Our Story", "How We Make", "Ingredients", "Shipping Policy", "Returns"],
 	connect: ["Instagram", "WhatsApp", "Facebook", "hello@example.in"],
 };

@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <div className="hidden items-center gap-6 *:font-medium *:tracking-[0.2px] *:text-secondary-text *:text-[0.875rem] md:flex">
             <NavLink to={ENDPOINTS.HOME}>Home</NavLink>
-            <NavLink to={ENDPOINTS.SHOP}>Shop</NavLink>
+            <NavLink to={ENDPOINTS. PRODUCTS}>Shop</NavLink>
             <NavLink to={ENDPOINTS.OUR_STORY}>Our Story</NavLink>
             <NavLink to={ENDPOINTS.CONTACT}>Contact</NavLink>
           </div>

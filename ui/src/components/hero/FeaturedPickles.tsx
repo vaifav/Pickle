@@ -30,7 +30,7 @@ const FeaturedPickles = () => {
 							</div>
 							<div className="flex flex-col items-center *:text-center">
 								<p className="font-semibold uppercase my-5 tracking-[1.5px] text-secondary-text text-[12px]">featured jar</p>
-								<NavLink to={ENDPOINTS.SHOP} className="flex items-center gap-2   font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
+								<NavLink to={ENDPOINTS. PRODUCTS} className="flex items-center gap-2   font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
 									<span>
 										Naadan <em className="text-primary-100">{obj.name}</em> pickle
 									</span>
