@@ -1,22 +1,55 @@
-import { ChevronRight, SlidersHorizontal } from "lucide-react";
-import type { StateProps } from "../../utils/types";
+import useFilterProducts from "@/hooks/useFilterProducts";
+import { ChevronDown, X } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
+const ProductListHead = () => {
+	const [searchParams] = useSearchParams();
+	const { updateFilter } = useFilterProducts();
+	const removeFilter = (key: string, value: string) => {
+		const filteredValues = searchParams
+			.get(key)
+			?.split(",")
+			.filter((val) => val !== value);
+		updateFilter({ [key]: filteredValues });
+	};
+	const activeFilters = (key: string) => {
+		return searchParams
+			.get(key)
+			?.split(",")
+			?.map((val) => {
+				return (
+					<span key={val} className="flex items-center gap-1 rounded-full capitalize font-medium text-primary-100 py-0.5 px-3 bg-primary-100/20 text-[12px]">
+						<span>{val}</span>
+						<X
+							className="size-3 cursor-pointer"
+							onClick={() => {
+								removeFilter(key, val);
+							}}
+						/>
+					</span>
+				);
+			});
+	};
 
-const ProductListHead = ({ setIsFilterOpen }: StateProps<boolean, "isFilterOpen">) => {
-	const openFilter = () => setIsFilterOpen(true);
+	const isAnyPresent = searchParams.get("spice") || searchParams.get("size");
 	return (
-		<div className="wrapper border-b border-secondary-text/10 pb-5">
-			<p className="flex items-center gap-1 font-secondary-sans text-[13px] text-secondary-text/80 mb-2 ml-2">
-				<span>Home</span> <ChevronRight className="size-2" /> <span>Shop</span> <ChevronRight className="size-2" />{" "}
-			</p>
-			<div className="flex items-center justify-between text-secondary">
-				<h1 className="font-bold font-serif leading-[1.1] tracking-[-1px] text-[clamp(28px,3vw,42px)] capitalize">all pickles</h1>
-				<div
-					className="group flex justify-center items-center gap-2 rounded-full transition-all duration-400 border border-secondary/20 bg-secondary/7 text-secondary font-secondary-sans font-semibold text-[15px] fill-secondary cursor-pointer overflow-hidden size-10 hover:w-25 lg:hidden"
-					onClick={openFilter}>
-					<div>
-						<SlidersHorizontal className="size-4" />
-					</div>
-					<span className="hidden opacity-0 group-hover:opacity-100 group-hover:block">Filter</span>
+		<div className="flex items-center gap-5 capitalize font-medium text-[12px] text-secondary-text">
+			{isAnyPresent && (
+				<div className="w-9/12 flex items-center gap-2 overflow-x-scroll custom-scrollbar text-nowrap before:content-['active:'] before:px-2 md:w-10/12">
+					{activeFilters("spice")}
+					{activeFilters("size")}
+				</div>
+			)}
+			<div className="flex justify-end grow relative">
+				<div className="group flex justify-between items-center w-fit">
+					<select name="other-filters" id="other-filters" className="appearance-none outline-0 pl-4 pr-6 py-2 border border-secondary-text/30 transition-colors duration-150 rounded-full w-full capitalize focus:border-primary-100/80">
+						<option value="most-popular">Most popular</option>
+						<option value="price-l-h">price: low to high</option>
+						<option value="price-h-l">price: high to low</option>
+						<option value="top-rated">top rated</option>
+					</select>
+					<label htmlFor="other-filters" className="absolute right-2 pointer-events-none">
+						<ChevronDown className="size-4 transition-transform duration-300 group-focus-within:rotate-180" />
+					</label>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FOOTER_DATA } from "../../utils/constants";
-import Divider from "./Divider";
+import { FOOTER_DATA } from "@/utils/constants";
+import Divider from "../Divider";
 
 const SideBarCategoryList = () => {
 	const [activeCategory, setActiveCategory] = useState(FOOTER_DATA.shop[0]);

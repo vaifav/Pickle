@@ -1,3 +1,1 @@
-# Completed the website aside part in product list
-
-- Used Shadcn ui also
+# Completed the website single product page
