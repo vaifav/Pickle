@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`wrapper flex items-center justify-between h-20 w-full p-2 fixed inset-0 z-100 bg-white/50 backdrop-blur font-secondary-sans ${!isMenuOpen && "shadow"}`}>
+      <header className={`wrapper flex items-center justify-between h-20 w-full p-2 fixed inset-0 z-100 bg-white/50 backdrop-blur font-secondary-sans ${!isMenuOpen && "border border-secondary-text/10"}`}>
         <div>
           <h1 className="font-serif font-black text-xl text-primary-100 tracking-[-0.5px]">
             PickTaste<span>.</span>
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <div className="hidden items-center gap-6 *:font-medium *:tracking-[0.2px] *:text-secondary-text *:text-[0.875rem] md:flex">
             <NavLink to={ENDPOINTS.HOME}>Home</NavLink>
-            <NavLink to={ENDPOINTS.SHOP}>Shop</NavLink>
+            <NavLink to={ENDPOINTS. PRODUCTS}>Shop</NavLink>
             <NavLink to={ENDPOINTS.OUR_STORY}>Our Story</NavLink>
             <NavLink to={ENDPOINTS.CONTACT}>Contact</NavLink>
           </div>

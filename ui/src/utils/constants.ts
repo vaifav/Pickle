@@ -1,12 +1,11 @@
 import dates from "../assets/DatesPickle.png";
 import lemon from "../assets/Malabar_Lemon_Pickle.png";
 import jaggery from "../assets/Jaggerylemonpickle.png";
-import { BookOpen, CookingPot, Phone, Store } from "lucide-react";
+import { BookOpen, Home, Phone, Store } from "lucide-react";
 
 export const ENDPOINTS = {
 	HOME: "/",
 	PRODUCTS: "/products",
-	SHOP: "/shop",
 	CONTACT: "/contact",
 	OUR_STORY: "/ourstory",
 	CART: "/cart",
@@ -15,13 +14,13 @@ export const ENDPOINTS = {
 
 export const NAV = [
 	{
-		name: "Pickles",
+		name: "Home",
 		path: ENDPOINTS.HOME,
-		Icon: CookingPot,
+		Icon: Home,
 	},
 	{
 		name: "Shop",
-		path: ENDPOINTS.SHOP,
+		path: ENDPOINTS.PRODUCTS,
 		Icon: Store,
 	},
 	{
@@ -37,7 +36,7 @@ export const NAV = [
 ];
 
 export const FOOTER_DATA = {
-	shop: ["Mango Pickles", "Lime Pickles", "Chilli Pickles", "Gift Boxes", "Bundles"],
+	shop: ["All Pickles", "Mango Pickles", "Lime Pickles", "Chilli Pickles", "Gift Boxes", "Bundles"],
 	info: ["Our Story", "How We Make", "Ingredients", "Shipping Policy", "Returns"],
 	connect: ["Instagram", "WhatsApp", "Facebook", "hello@example.in"],
 };
@@ -61,6 +60,20 @@ export const OUR_PROCESS_STEPS = [
 	},
 ];
 
+export const SPICE_LEVEL = {
+	MILD: "mild",
+	MEDIUM: "medium",
+	HOT: "hot",
+} as const;
+
+export const JAR_SIZES = {
+	"200g": "200g",
+	"250g": "250g",
+	"500g": "500g",
+	"1kg": "1kg",
+	giftSet: "gift set",
+} as const;
+
 // Dummy data
 export const DUMMY_PERSON =
 	"https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww";
@@ -69,28 +82,57 @@ export const DUMMY_FEATURED_PICKLES = [
 	{
 		name: "lemon",
 		image: lemon,
+		category: "Lemon & Citrus",
+		rating: 5.0,
+		spiceLevel: "medium",
+		jarSize: "500g",
 		price: 160,
 		description: "Sun-dried limes, red chilli, fenugreek, aged in clay pots, pure masala",
 	},
 	{
 		name: "dates",
 		image: dates,
+		category: "spicy Dates",
+		rating: 4.5,
+		spiceLevel: "mild",
+		jarSize: "200g",
 		price: 120,
 		description: "Arabian dates, village-ground spices, cold-pressed sesame oil",
 	},
 	{
 		name: "garlic",
 		image: lemon,
+		category: "ginger & garglic",
+		rating: 3,
+		spiceLevel: "mild",
+		jarSize: "500g",
 		price: 180,
 		description: "Small pearl onions, tamarind, kokum, traditional Kerala masala",
 	},
 	{
 		name: "lemon",
 		image: jaggery,
-		price: 130,
+		category: "Lemon & Citrus",
+		rating: 4.5,
+		spiceLevel: "medium",
+		jarSize: "1kg",
+		price: 500,
 		description: "Sun-dried limes, jaggery, fenugreek, aged in clay pots, kerala traditional masala",
 	},
 ];
+/*
+
+{
+  category,
+  name,
+  desc,
+  rating, 
+  spicelevel,
+  price,
+  jarsize,
+}
+
+*/
 export const DUMMY_MARQUEE = [
 	"Free delivery on orders above ₹499",
 	"Handcrafted in Kerala",
@@ -173,3 +215,5 @@ export const DUMMY_REVIEWS = [
 		place: "Chandigarh, Punjab",
 	},
 ];
+
+export const DUMMY_PRODUCT_IMAGES = [lemon, dates, jaggery];
