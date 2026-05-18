@@ -4,9 +4,9 @@ const Marque = () => {
 	return (
 		<section className="flex items-center h-10 bg-secondary px-0! my-5 overflow-hidden">
 			<div className="flex animate-marquee w-max">
-				{DUMMY_MARQUEE.map((tag) => {
+				{DUMMY_MARQUEE.map((tag, index) => {
 					return (
-						<div className="flex items-center justify-center gap-2 px-8 text-rust-50 font-medium font-serif text-[13px] text-nowrap">
+						<div key={tag + index} className="flex items-center justify-center gap-2 px-8 text-rust-50 font-medium font-serif text-[13px] text-nowrap">
 							<span className="italic text-[12px]">✦</span>
 							<p>{tag}</p>
 						</div>

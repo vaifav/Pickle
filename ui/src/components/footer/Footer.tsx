@@ -17,12 +17,12 @@ const Footer = () => {
 			<div className="flex justify-between flex-wrap gap-10 md:grow">
 				{Object.entries(FOOTER_DATA).map(([key, values]) => {
 					return (
-						<div>
+						<div key={key + values}>
 							<h6 className="text-rust-100 uppercase leading-[2.5px] text-[11px] mb-5">{key}</h6>
 							<div className="flex flex-col gap-2">
-								{values.map((tag) => {
+								{values.map((tag, index) => {
 									return (
-										<NavLink to="" className="text-secondary-text text-[14px] italic transition-colors delay-200 hover:text-white/70">
+										<NavLink key={tag + index} to="" className="text-secondary-text text-[14px] italic transition-colors delay-200 hover:text-white/70">
 											{tag}
 										</NavLink>
 									);

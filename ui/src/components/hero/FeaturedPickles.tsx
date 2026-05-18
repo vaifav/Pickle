@@ -21,16 +21,16 @@ const FeaturedPickles = () => {
 			}}
 			loop={true}
 			speed={1200}>
-			{DUMMY_FEATURED_PICKLES.map((obj) => {
+			{DUMMY_FEATURED_PICKLES.map((obj, index) => {
 				return (
-					<SwiperSlide key={obj.name}>
+					<SwiperSlide key={obj.name + index}>
 						<div className="flex flex-col items-center">
 							<div className="max-w-90">
 								<img className="relative z-10 size-full object-cover" src={obj.image} alt="pick" />
 							</div>
 							<div className="flex flex-col items-center *:text-center">
 								<p className="font-semibold uppercase my-5 tracking-[1.5px] text-secondary-text text-[12px]">featured jar</p>
-								<NavLink to={ENDPOINTS. PRODUCTS} className="flex items-center gap-2   font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
+								<NavLink to={ENDPOINTS.PRODUCTS} className="flex items-center gap-2   font-black leading-none text-secondary mb-3 text-xl uppercase sm:text-2xl">
 									<span>
 										Naadan <em className="text-primary-100">{obj.name}</em> pickle
 									</span>
